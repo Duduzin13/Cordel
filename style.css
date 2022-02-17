@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Cordel";
+  src: url("Fontes/ConcreteWall.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "1";
+  src: url("Fontes/PassionOne-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "2";
+  src: url("Fontes/Sriracha-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
+
+:root {
+  --fonte-1: Arial, Verdana, Helvetica, Sans-serif;
+  --fonte-2: "Cordel", cursiva;
+  --fonte-3: "1", cursiva;
+  --fonte-4: "2", cursiva;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+header > h1 {
+  font-family: var(--fonte-2);
+  padding-top: 20px;
+  font-variant: small-caps;
+  font-size: 15vw;
+}
+header p {
+  font-family: var(--fonte-1);
+  background-color: black;
+  color: white;
+  padding-bottom: 40px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+section {
+  font-family: var(--fonte-4);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-size: 3vw;
+
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+section.imagem {
+  background-color: rgb(54, 54, 54);
+  color: white;
+
+}
+section p.separar {
+  padding-top: 50px;
+}
+section.imagem > p {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.514);
+  padding: 5px;
+}
+section.imagem#flor {
+  background: black url(imagens/background001.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+section.imagem#folhas {
+  background: black url(imagens/background002.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+footer {
+  font-family: var(--fonte-1);
+  text-align: center;
+  background-color: black;
+  font-size: 1em;
+  color: white;
+  padding: 10px;
+}

@@ -68,7 +68,6 @@ section {
   line-height: 2em;
   padding-left: 30px;
   font-size: 3vw;
-
 }
 
 section.normal {
@@ -82,7 +81,6 @@ section.imagem {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 }
 section p.separar {
   padding-top: 50px;
@@ -94,13 +92,11 @@ section.imagem > p {
 }
 section.imagem#flor {
   background-color: black;
-            background-image: url('imagens/background001.jpg');
-
+  background-image: url("imagens/background001.jpg");
 }
 section.imagem#folhas {
   background-color: black;
-            background-image: url('imagens/background002.jpg');
-
+  background-image: url("imagens/background002.jpg");
 }
 footer {
   font-family: var(--fonte-1);
